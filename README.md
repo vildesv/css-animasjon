@@ -62,14 +62,7 @@ Lag et **interaktivt kort eller meny** der du bruker:
 
 ---
 
-## ✅ Husk
-- Bruk separate HTML- og CSS-filer.
-- Navngi mappen f.eks. `css-animasjon`.
-- Ha det gøy og eksperimenter!
-
----
-
-## 🛠 Eksempel på teknologi du kan bruke
+## 🛠 Teknologi
 
 - HTML5
 - CSS3: `@keyframes`, `transition`, `transform`, `:hover`, `:focus`
