@@ -1,0 +1,307 @@
+/* Reset og generelt */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skewed-title {
+  transform: skew(-5deg);
+}
+
+.link {
+  color: #ffd700;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+/* Eksempelseksjon */
+.examples {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #eef;
+  border-radius: 10px;
+}
+
+.examples h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Ball som hopper */
+.bounce-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 60px; /* Hindrer kollisjon med overskriften */
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  background-color: #ff5252;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+/* Fade og beveg tekst */
+.fade-move-example {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fade-text {
+  opacity: 0;
+  animation: fadeMove 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeMove {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover-knapp */
+.button-example {
+  text-align: center;
+}
+
+/* Puls-animasjon med @keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #2980b9;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+}
+
+/* Knapp med hover-effekt og pulserende animasjon */
+.hover-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.hover-button:hover {
+  transform: scale(1.15);
+  background-color: #1d6fa5;
+}
+
+.transitions-examples {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.transitions-examples h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Knapp som endrer farge */
+.color-change-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-bottom: 1.5rem;
+}
+
+.color-change-button:hover {
+  background-color: #962f96;
+}
+
+.transition-image-example img:hover {
+  transform: scale(1.1);
+}
+
+/* Tekst som endrer opasitet */
+.transition-text-example {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.opacity-text {
+  background-color: #ffe4e1;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.opacity-text:hover {
+  opacity: 0.6;
+}
+
+.transform-examples {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.transform-examples h2 {
+  margin-bottom: 2rem;
+}
+
+/* Rotere et element når siden lastes */
+.rotating-box {
+  display: inline-block;
+  background-color: #ffcc80;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: rotateBox 2s ease-out;
+}
+
+@keyframes rotateBox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Zoom bilde ved hover */
+.zoom-image-example {
+  margin-bottom: 2rem;
+}
+
+.zoom-image-example img {
+  width: 150px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.zoom-image-example img:hover {
+  transform: scale(1.2);
+}
+
+/* Skew (skjev) overskrift */
+.skewed-heading {
+  display: inline-block;
+  font-size: 1.5rem;
+  transform: skewX(-15deg);
+  color: #6a1b9a;
+  background-color: #ede7f6;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* Legg mer avstand rundt rotating-box */
+.rotate-example {
+  margin-bottom: 2rem;
+}
+
+.rotating-box {
+  margin-bottom: 1.5rem;
+}
+
+/* Zoom-bilde og tekst */
+.zoom-image-example {
+  margin-bottom: 2rem;
+}
+
+/* Ekstra luft under hele transform-seksjonen */
+.transform-examples {
+  margin-bottom: 4rem;
+}
+
+/* Interaktivt kort */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.interactive-card {
+  width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: cardEnter 1.2s ease;
+}
+
+.interactive-card:hover {
+  transform: rotateY(5deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
