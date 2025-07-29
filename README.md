@@ -1,4 +1,4 @@
-# 🎨 CSS Animasjon, Transition og Transform – Øvingsoppgave
+# 🎨 Øvingsoppgave - CSS Animasjon, Transition og Transform
 
 ## 📌 Mål
 
